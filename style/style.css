@@ -1,0 +1,219 @@
+/* CSS Général pour les ecrans de plus 992px */
+
+/* Réinitialise les marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste le positionnement et définie l'image du logo dans le header */
+#logo {
+    background: url('../images/logoFormation.png')no-repeat;
+    width: 15%;
+    height: 150px;
+    margin-left: 50px;
+}
+
+header {
+    text-align: center;
+}
+
+/* Permet de les mettre en ligne avec la position par defaut du display flex */
+#headerTop {
+    display: flex;
+    justify-content: center;
+}
+
+/* Titre dans le header  */
+#cTitle {
+    width: 85%;
+}
+
+#title {
+    text-align: center;
+    flex-direction: row;
+    margin-top: 35px;
+    font-family: Pacifico, cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #68cf34;
+    font-size: 2.5em;
+}
+
+/* Retire les points qui sont mis par défaut sur les listes ul*/
+ul {
+    list-style: none;
+}
+
+/* Retire toute les decoration des liens */
+a {
+    text-decoration: none;
+}
+
+/* menu de navigation dans le header */
+header nav {
+    height: 40px;
+    background-color: #33373a;
+    padding-top: 10px;
+}
+
+/* ul dans la nav qui me permettre d'ajuster : en ligne, l'espacement etc */
+#menuTop {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+/* je change la couleur et la taille des liens dans ma barre de navigation du haut */
+.menuLiens {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* la couleur lorsqu'ils sont survolés */
+.menuLiens:hover {
+    color: #68cf34;
+}
+
+/* Je change le style des titres d'articles je rajoute le background et je change la police d'écristure */
+.titleArticle {
+    padding-top: 5px;
+    font-family: Pacifico, cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: #68cf34;
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* j'ajuste la taille de ma nav dans mon footer  */
+#navBot {
+
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+/* j'aligne le menu bot à droite */
+#menuBot {
+    display: flex;
+    justify-content: end;
+}
+
+/* je donne une marge à tous mes article */
+.textArticle {
+    text-align: justify;
+    margin: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+/* j'espace le lien accueil pour ne pas qu'il soit collé l'un à l'autre et pas non plus collé au bord de la page */
+#accLien {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Je change la couleur des liens du bas */
+.menuBotLiens,
+.menuBotLiens:visited,
+.menuBotLiens:link {
+    color: #a9b7ce;
+}
+
+.menuBotLiens:hover {
+    color: #68cf34;
+}
+
+/* --------------------------------------------------CSS pour les petit écrans------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    #logo {
+        background: url('../images/logoFormation.png')no-repeat;
+        height: 200px;
+        width: 131px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    #menuTop {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+
+    /* menu de navigation dans le header */
+    header nav {
+        height: 150px;
+        background-color: #33373a;
+        padding-top: 10px;
+    }
+
+
+    /* Titre dans le header  */
+
+    #title {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 0px;
+        font-family: Pacifico, cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #68cf34;
+        font-size: 3.5em;
+    }
+}
+
+/* --------------------------------------------------CSS pour les Tablettes ------------------------------------------------------------- */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+    #logo {
+        background: url('../images/logoFormation.png')no-repeat;
+        width: 20%;
+        height: 150px;
+        margin-left: 0;
+    }
+
+    #menuTop {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+
+    /* menu de navigation dans le header */
+    header nav {
+        height: 40px;
+        background-color: #33373a;
+        padding-top: 10px;
+    }
+
+    /* Titre dans le header  */
+    #cTitle {
+        width: 80%;
+    }
+
+    #title {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 0px;
+        font-family: Pacifico, cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #68cf34;
+        font-size: 2.5em;
+    }
+
+    /* Je modidie mon main pour l'affichage des articles cote à cote */
+    main {
+        display: flex;
+    }
+
+}
